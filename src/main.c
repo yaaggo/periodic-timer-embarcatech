@@ -19,12 +19,15 @@ char *cores[] = {
 };
 
 bool traffic_lights_routine(struct repeating_timer *t) {  
-    printf("Luz %s desligou (passaram-se 3 segundos)\n", cores[led_index]);
+    printf("Luz %s desligou\n", cores[led_index]);
     led_state(leds_routine[led_index], false);
 
     led_index = led_index >= 2 ? 0 : led_index + 1;
     
-    printf("Luz %s ligou (passaram-se 3 segundos)\n", cores[led_index]);
+    printf("Luz %s ligou" 
+           "(passaram-se 3 segundos)\n",
+           cores[led_index]);
+           
     led_state(leds_routine[led_index], true);
 
     return true;
