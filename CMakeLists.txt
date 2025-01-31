@@ -60,7 +60,6 @@ target_include_directories(periodic-timer-embarcatech PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(periodic-timer-embarcatech 
-        
         )
 
 pico_add_extra_outputs(periodic-timer-embarcatech)
