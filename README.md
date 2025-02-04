@@ -61,13 +61,18 @@ Cada LED está conectado a um pino GPIO através de um resistor de 330 Ω.
    - Configure o ambiente de desenvolvimento.
 
 2) **Compilar o código**:
+   - Clone o repositório no diretório que você quer compilar utilizando:
+     ```bash
+     git clone https://github.com/yaaggo/periodic-timer-embarcatech.git
+     ```
    - Compile utilizando as ferramentas do SDK do Pico.
+   - (opcional) Se estiver utilizando a exntensão do Raspberry Pi Pico SDK no vscode, importe o projeto e compile pela extensão
 
-3) **Fazer upload para a placa**:
+4) **Fazer upload para a placa**:
    - Conecte a Raspberry Pi Pico via USB.
    - Envie o binário gerado para a placa.
 
-4) **Executar o código**:
+5) **Executar o código**:
    - Observe os LEDs alternando a cada 3 segundos.
    - Acompanhe as mensagens no console serial.
 
