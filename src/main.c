@@ -52,9 +52,16 @@ int main() {
 
     led_state(LED_RED_PIN, true);
 
+    uint16_t time_acm = 0;
+
     while (true) {
         sleep_ms(1000);
-        printf("passou 1 segundo\n");
+        time_acm += 1000;
+        
+        if(time_acm != 3000)
+            printf("passou 1 segundo\n");
+        else
+            time_acm = 0;
     }
 
     return 0;
